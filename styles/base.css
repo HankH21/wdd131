@@ -1,0 +1,200 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #243447;
+    background-color: #f5f1e8;
+}
+
+header {
+    background-color: #043e6d;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d85e0;
+}
+
+nav a {
+    flex: 1;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #f28c28;
+    color: #102f46;
+}
+
+
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    color: #043e6d;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.8rem;
+    background-color: #043e6d;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+}
+
+h3 {
+    margin: 0 5rem;
+    padding: 0.8rem;
+    color:#043e6d;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 0.05rem solid #939495;
+}
+
+
+
+.card {
+    background-color: white;
+    border: 1px solid #d8d2c4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+    padding: 0 1.2rem;
+    line-height: 1.7;
+}
+
+.card img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin: 1rem auto;
+
+}
+
+.card figure {
+    text-align: center;
+}
+
+
+
+
+.card ul {
+    padding: 1.5rem 2rem;
+    line-height: 2;
+}
+
+.card a {
+    color: #176b87;
+}
+
+.card a:hover {
+    color: #f28c28;
+}
+
+.about-card{
+    display: grid;
+}
+
+.about-card h3{
+    
+    width:62%;
+    text-align: center;
+    /* background-color:#043e6d  ; */
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.upper p{
+    grid-column: 1 / 2;
+}
+
+.upper img{
+    grid-column: 2 / 3;
+    height: auto;
+    max-width:70%
+}
+
+
+.lower {
+    width:75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.lower img {
+    max-width: 150%;
+}
+
+.resource-card{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.resource-card ul {
+    align-self: center;
+}
+
+
+footer {
+    padding: 1.5rem;
+    background-color: #043e6d;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+#lastModified {
+    color: #f8c471;
+    font-size: 0.9rem;
+}

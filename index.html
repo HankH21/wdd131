@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 project</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Pei-Han Hung</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Pei-Han Hung, about me">
+    <meta name="author" content="Pei-Han Hung">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 project</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/pei-han-hung-4b78532a3/">LinkedIn</a>
+            <a href="https://byupw.instructure.com">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=eng&id=p34-p35#p34">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Pei-Han Hung</h1>
+        <section class="card about-card">
+            <h2>About Me</h2>
+            <div class="upper">
+                <p>
+                    My name is Pei-Han Hung, I go by Pei-Han or Hank. I was born in Taichung City, the second largest city in Taiwan. I'm currently working
+                    for a company which sells kitchen appliances. I am currently studying computer science and learning web development. I'm a huge car and bike
+                    enthusiast. 
+                </p>
+
+                <img src="images/profile.webp" alt="photo of Pei-Han Hung">
+            </div>
+
+            <h3>Taiwan</h3>
+
+            <div class="lower">
+                <figure>
+                    <img src="images/taiwanflag.png" alt="Taiwan flag">
+                    <figcaption>Official flag of Taiwan</figcaption>
+                </figure>
+            
+                <p>
+                    Taiwan is an island in East Asia. It is known for its beautiful mountains, delicious food, and modern cities. Taiwan plays an important role in the
+                    technology industry. TSMC is the most advanced semiconductor manufacturer. Companies such as Nvidia, Apple, Google, Meta, etc. have
+                    strong relationship with TSMC.
+                </p>
+            </div>
+
+        </section>
+        <section class="card resource-card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                 <li>
+                    <a href="https://dev.to/">Dev.to Community</a>
+                </li>
+
+                <li>
+                    <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                </li>
+
+                <li>
+                    <a href="https://css-tricks.com/">CSS Tricks</a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com/">W3 Schools</a>
+                </li>
+
+                <li>
+                    <a href="https://www.udemy.com/">Udemy</a>
+                </li>
+
+                <li>
+                    <a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span> Pei-Han Hung, Taiwan
+        </p>
+        <p id="lastModified">
+
+        </p>
+    </footer>
 </body>
-</html>1211
+</html>
