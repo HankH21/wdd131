@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taiwan</title>
+    <meta name="description" content="Information about Taiwan, including data and weather.">
+    <meta name="author" content="Pei-Han Hung">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Taiwan</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 960px)">
+                <img src="images/hero-small.webp" alt="Taiwan landscape">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><span>Area:</span> 36,000 sq km</p>
+            <p><span>Population:</span> 23,317,031</p>
+            <p><span>Capital:</span> Taipei</p>
+            <p><span>Languages:</span> Mandarin, Taiwanese, Hakka</p>
+            <p><span>Currency:</span> New Taiwan Dollar</p>
+            <p><span>Time Zone:</span> UTC+8</p>
+            <p><span>Calling Code:</span> +886</p>
+            <p><span>Internet TLD:</span> .tw</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Partly cloudy weather">
+            <p><span>Temperature:</span> 8°C</p>
+            <p><span>Conditions:</span> Partly Cloudy</p>
+            <p><span>Wind:</span> 12 km/h</p>
+            <p><span>Wind Chill:</span> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pei-Han Hung, Taiwan</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
