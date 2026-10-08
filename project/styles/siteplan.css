@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --dark-blue: #12304A;
+    --light-gray: #F2F4F5;
+    --orange: #E67E22;
+}
+
+body {
+    margin: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: white;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-box {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #333;
+}
+
+.dark-blue {
+    background-color: #12304A;
+}
+
+.light-gray {
+    background-color: #F2F4F5;
+}
+
+.orange {
+    background-color: #E67E22;
+}
+
+.font-heading {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.wireframe {
+    border: 2px solid var(--dark-blue);
+    padding: 1rem;
+    display: grid;
+    gap: 0.75rem;
+    background-color: white;
+}
+
+.wireframe-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.mobile-wireframe {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.desktop-wireframe {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+    .mobile-wireframe {
+        max-width: 400px;
+    }
+}
