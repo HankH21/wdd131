@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 – Product Review Form</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Pei-Han Hung, Week 5 product review form">
+    <meta name="author" content="Pei-Han Hung">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <label for="productName">Product Name*</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating*</legend>
+
+                <div class="rating-options">
+                    <label for="rating1">
+                        <span>☆</span>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+
+                    <label for="rating2">
+                        <span>☆☆</span>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </label>
+
+                    <label for="rating3">
+                        <span>☆☆☆</span>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </label>
+
+                    <label for="rating4">
+                        <span>☆☆☆☆</span>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </label>
+
+                    <label for="rating5">
+                        <span>☆☆☆☆☆</span>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation*</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <p class="instruction">Check all that apply.</p>
+
+                <label for="durability">
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability
+                </label>
+
+                <label for="easeOfUse">
+                    <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                    Ease of Use
+                </label>
+
+                <label for="performance">
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="writtenReview">
+                Written Review <span class="optional">(Optional)</span>
+            </label>
+            <textarea id="writtenReview" name="writtenReview" rows="5"></textarea>
+
+            <label for="userName">
+                Your Name <span class="optional">(Optional)</span>
+            </label>
+            <input type="text" id="userName" name="userName" autocomplete="name">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Pei-Han Hung, Taiwan</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
