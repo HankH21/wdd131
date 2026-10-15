@@ -6,7 +6,7 @@
     --color-accent: #E67E22;
     --color-white: #FFFFFF;
     --color-text: #263746;
-    --color-muted: #566673;
+    --color-muted: #000000;
     --color-border: #D5DDE2;
     --color-soft-blue: #E8EFF4;
     --font-heading: "Poppins", sans-serif;
@@ -104,7 +104,7 @@ p {
     top: 1rem;
 }
 
-/* 修正 2：Header 雙重防呆 */
+
 header,
 .site-header {
     position: relative;
@@ -161,7 +161,7 @@ header,
 .primary-navigation a:focus-visible,
 .primary-navigation a.active {
     background: var(--color-accent);
-    color: #1D2A33;
+    color: #000000;
 }
 
 .menu-toggle {
@@ -197,7 +197,7 @@ header,
 
 .eyebrow {
     margin-bottom: 0.65rem;
-    color: #9A4D08;
+    color: #743906;
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.09em;
@@ -240,14 +240,14 @@ header,
 
 .button-primary {
     background: var(--color-accent);
-    color: #1D2A33;
+    color: #000000;
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
     border-color: var(--color-primary);
     background: #F6A04D;
-    color: #1D2A33;
+    color: #000000;
 }
 
 .button-outline {
