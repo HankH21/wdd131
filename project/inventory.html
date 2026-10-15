@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse sample used cars at Hank's Auto. Filter by vehicle type, price, model year, and mileage.">
+    <meta name="author" content="Hank's Auto">
+    <title>Inventory | Hank's Auto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/inventory.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-logo" href="index.html" aria-label="Hank's Auto home">Hank's <span>Auto</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="inventory.html" aria-current="page">Browse Cars</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="page-main">
+        <section class="page-banner">
+            <p class="eyebrow">Explore your options</p>
+            <h1>Browse Used Cars</h1>
+            <p>Use the filters to narrow the sample inventory by price, year, mileage, or vehicle type.</p>
+        </section>
+
+        <section class="inventory-layout section" aria-labelledby="filters-heading">
+            <aside class="filter-panel">
+                <h2 id="filters-heading">Find a car</h2>
+                <form id="filter-form">
+                    <div class="form-field">
+                        <label for="search-input">Search by make or model</label>
+                        <input type="search" id="search-input" name="search" placeholder="For example, Honda">
+                    </div>
+                    <div class="form-field">
+                        <label for="vehicle-type">Vehicle type</label>
+                        <select id="vehicle-type" name="type">
+                            <option value="all">All types</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Hatchback">Hatchback</option>
+                            <option value="Truck">Truck</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="max-price">Maximum price</label>
+                        <select id="max-price" name="maxPrice">
+                            <option value="all">Any price</option>
+                            <option value="10000">$10,000</option>
+                            <option value="15000">$15,000</option>
+                            <option value="20000">$20,000</option>
+                            <option value="25000">$25,000</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="min-year">Model year from</label>
+                        <select id="min-year" name="minYear">
+                            <option value="all">Any year</option>
+                            <option value="2015">2015</option>
+                            <option value="2018">2018</option>
+                            <option value="2020">2020</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="max-mileage">Maximum mileage</label>
+                        <select id="max-mileage" name="maxMileage">
+                            <option value="all">Any mileage</option>
+                            <option value="40000">40,000 miles</option>
+                            <option value="60000">60,000 miles</option>
+                            <option value="80000">80,000 miles</option>
+                            <option value="100000">100,000 miles</option>
+                        </select>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="button button-primary button-full" type="submit">Apply Filters</button>
+                        <button class="button button-outline button-full" id="reset-filters" type="reset">Reset Filters</button>
+                    </div>
+                </form>
+            </aside>
+
+            <div class="inventory-results">
+                <div class="results-heading">
+                    <div>
+                        <h2>Available Cars</h2>
+                        <p id="results-count" aria-live="polite">Loading cars...</p>
+                    </div>
+                    <label class="favorite-filter-label" for="favorites-only">
+                        <input type="checkbox" id="favorites-only">
+                        Show favorites only
+                    </label>
+                </div>
+                <p class="demo-note">All vehicles, prices, and mileage values below are fictional sample data created for this project.</p>
+                <div class="car-grid" id="inventory-cars" aria-live="polite">
+                    <p class="loading-message">Loading inventory...</p>
+                </div>
+                <p class="empty-message" id="empty-message" hidden>No cars match these filters. Try changing your search.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-logo" href="index.html">Hank's Auto</a>
+            <p>Helping you compare used-car options with confidence.</p>
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="inventory.html">Browse Cars</a>
+                <a href="contact.html">Contact</a>
+                <a href="references.html">References</a>
+            </nav>
+            <p class="copyright">&copy; <span id="current-year">2026</span> Hank's Auto. | Pei-Han Hung | WDD131 Project.</p>
+        </div>
+    </footer>
+</body>
+</html>
